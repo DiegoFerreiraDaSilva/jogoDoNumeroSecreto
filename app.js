@@ -15,6 +15,7 @@ function exibirTexto(tag, texto)
 {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
+    //Tentativa de colocar voz no projeto
     responsiveVoice.speak(texto,"Brazilian Portuguese Female", {raet:1.2});
 }
 
