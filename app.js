@@ -8,15 +8,14 @@ function mensagemInicial()
 {
     exibirTexto("h1", "Jogo do número secreto");
 
-    exibirTexto("p","Escolha um número de 0 a 100");
+    exibirTexto("p",`Escolha um número de 0 a ${numeroMaximo}`);
 }
 mensagemInicial();
 function exibirTexto(tag, texto)
 {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
-    //Tentativa de colocar voz no projeto
-    //responsiveVoice.speak(texto,"Brazilian Portuguese Female", {raet:1.2});
+    
 }
 
  function verificarChute()
